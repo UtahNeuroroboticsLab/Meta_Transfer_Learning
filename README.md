@@ -1,7 +1,6 @@
 # Meta_Transfer_Learning
-# Utah Neuromotor Interface: MATLAB and Jupyter Workflows
 
-This repository contains the analysis and modeling workflow used to adapt a frozen Meta discrete-gesture model to Utah sEMG recordings.
+This repository has the workflow used to adapt a frozen Meta discrete-gesture model to Utah sEMG recordings.
 
 ## Contents
 
@@ -9,41 +8,25 @@ This repository contains the analysis and modeling workflow used to adapt a froz
 - `Labeled_Dataset.ipynb` — Creates gesture labels and fixed train/validation/test splits.
 - `Zero_Shot_Meta.ipynb` — Frozen-model baseline with a fixed 32-to-16 channel bridge; no training.
 - `Meta_TL.ipynb` — Primary task-only transfer-learning experiment. The Meta backbone remains frozen; only the Utah adapter is trained.
-- `DA_Meta_TL.ipynb` — Domain-adaptation version of the transfer-learning experiment, with optional CORAL alignment.
-- `Optimized_Meta_Lockd_DA.ipynb` — Earlier optimized domain-adaptation experiment for comparison and development.
 
-## Recommended workflow
+## Workflow
 
 1. Run `Data_Alignment.ipynb` only when rebuilding data from raw recordings.
 2. Run `Labeled_Dataset.ipynb` to reproduce labels and fixed splits.
 3. Run `Zero_Shot_Meta.ipynb` to establish a no-training baseline.
 4. Run `Meta_TL.ipynb` to reproduce the main experiment.
-5. Run `DA_Meta_TL.ipynb` after reproducing the task-only result.
 
 ## Setup
 
-Install the project environment and dependencies, including PyTorch, NumPy, SciPy, h5py, Matplotlib, and Pandas. A CUDA-enabled PyTorch installation is recommended for training.
-
+Install the project environment and dependencies, including PyTorch, NumPy, SciPy, h5py, Matplotlib, and Pandas.
 Update the paths at the top of each notebook for your local environment. The model notebooks require:
 
-- the `generic_neuromotor_interface` package;
-- the pretrained Meta checkpoint;
-- `Gesture_Trial_Dataset_Labeled.pt`;
-- raw KDF/NS5/HDF5 data only when regenerating aligned data.
+- the `generic_neuromotor_interface` package (from Meta repo)
+- the pretrained Meta checkpoint (.ckpt file)
+- `Gesture_Trial_Dataset_Labeled.pt` (made by Labeled_Dataset.ipynb)
+- raw KDF/NS5/HDF5 data only when regenerating aligned data (recorded on feedback decode/trellis software)
 
-## Important conventions
-
-- Utah recordings are processed from 30 kHz to 2 kHz using anti-aliased resampling and a 40 Hz high-pass filter.
-- Each example is a one-second window centered on the final active-valid label interval.
-- The Meta output mapping is `[5, 6, 7, 8, 4]`.
-- Target alignment uses the model’s exact left context and stride.
-- Do not silently exclude validation or test trials.
-- Report task BCE and complete-trial mean-logit accuracy. Label active-bin accuracy separately.
-
-## Reproducibility
-
-For every run, record the notebook and commit, checkpoint path, dataset version, random seed, hardware/software versions, split counts, crop audit, diagnostic output, and best-validation checkpoint.
-
-## Data handling
-
-Do not commit large recordings, checkpoints, `.pt`, `.h5`, or `.mat` files unless large-file storage is configured. Keep restricted or participant-sensitive data in approved storage.
+- Utah recordings are downsampled from 30 kHz to 2 kHz and use the same preprocessing as Meta (40 Hz high-pass filter and normalizing st dev to 1)
+- After the first conv layer of Meta model, the 2kHz is downsampled to 198 time bins
+- Most active labels (the sequence of time bins during which a gesture was prompted) last for 50-80 time bins
+- The training cell (in Meta_TL.ipynb) reports all-or-nothing accuracy for each trial by making one prediction for the highest accumulation of probability across all time bins. A following cell reports accuracy across predictions at each of the trial's active time bins.
