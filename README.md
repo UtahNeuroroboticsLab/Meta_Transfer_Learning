@@ -8,6 +8,9 @@ This repository has the workflow used to adapt a frozen Meta discrete-gesture mo
 - `Labeled_Dataset.ipynb` — Creates gesture labels and fixed train/validation/test splits.
 - `Zero_Shot_Meta.ipynb` — Frozen-model baseline with a fixed 32-to-16 channel bridge; no training.
 - `Meta_TL.ipynb` — Primary task-only transfer-learning experiment. The Meta backbone remains frozen; only the Utah adapter is trained.
+- `load_ns5_segments.m` — aligns kdf and ns5 on trainNIPtime timestamps
+- `readKDF.m` — extracts kdf data
+- `convertNSXtoh5.m` — converts ns5 data from FastNSXread to h5 for python
 
 ## Workflow
 
