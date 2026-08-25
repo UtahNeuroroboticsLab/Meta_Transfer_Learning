@@ -1,21 +1,8 @@
 # Utah EMG Experiment Index
 
-The MATLAB/Jupyter workspace is organized by experimental method. Large `.pt`
-datasets remain in `generic_neuromotor_interface` so existing dataset paths stay
-stable.
-
-## 00_data_preparation
-
-- Alignment, labeling, and dataset-building notebooks
-- MATLAB alignment/export helpers
-- `session_20260723/`: original NSx/KDF session files
-- `aligned_h5/`: aligned intermediate datasets
-
-Notebooks:
-
-- `01_align_utah_recordings.ipynb`
-- `02_label_original_utah_dataset.ipynb`
-- `03_label_updated_utah_dataset.ipynb`
+The repository is organized by experimental method. Data creation and labeling
+are documented separately in [`../data_preparation`](../data_preparation).
+Large datasets and model weights remain outside version control.
 
 ## 01_meta_tl_baseline
 
@@ -30,6 +17,7 @@ Notebooks:
 - `04_standalone_decoder_append_cells.ipynb`
 - `05_task_only_meta_adapter.ipynb` (Meta frozen; Utah adapter trained)
 - `06_zero_shot_frozen_meta.ipynb` (strict no-training control)
+- `original_repo_versions/` (original repository reference notebooks)
 
 ## 02_rotation_invariance
 

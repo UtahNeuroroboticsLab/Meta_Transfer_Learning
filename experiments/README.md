@@ -5,12 +5,14 @@ their compact results. Start with `EXPERIMENT_INDEX.md` for the experiment map.
 
 ## Contents
 
-- `00_data_preparation`: labeling, burst detection, and dataset preparation
 - `01_meta_tl_baseline`: original Meta transfer-learning baseline and comparisons
 - `02_rotation_invariance`: learnable-adapter rotational-invariance experiments
 - `03_online_domain_adaptation`: frozen online evaluation, CORAL, GAN, and DANN
 - `04_representation_learning`: frozen-teacher distillation, joint embedding, and
   Utah-only learning-speed comparisons
+
+The alignment and labeling workflows are kept in the sibling
+[`data_preparation`](../data_preparation) directory.
 
 Notebooks, scripts, metric tables, configuration files, and PNG result figures are
 included. Raw EMG recordings, generated datasets, model checkpoints, notebook
