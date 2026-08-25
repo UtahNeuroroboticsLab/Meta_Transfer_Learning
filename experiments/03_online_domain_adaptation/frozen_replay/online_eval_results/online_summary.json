@@ -1,0 +1,98 @@
+[
+  {
+    "dataset": "New_Gesture_Trial_Dataset_Labeled.pt",
+    "trials_present": 100,
+    "trials_evaluated": 99,
+    "trials_skipped": 1,
+    "development_overlaps": 0,
+    "accuracy_all": 0.7777777777777778,
+    "nonoverlap_trials": 99,
+    "accuracy_nonoverlap": 0.7777777777777778,
+    "median_inference_latency_ms": 77.62469997396693,
+    "confusion_true_rows_predicted_columns": [
+      [
+        12,
+        0,
+        2,
+        0,
+        5
+      ],
+      [
+        0,
+        18,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        5,
+        13,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        2,
+        14,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        20
+      ]
+    ]
+  },
+  {
+    "dataset": "Gesture_Trial_Dataset_Labeled.pt",
+    "trials_present": 53,
+    "trials_evaluated": 48,
+    "trials_skipped": 5,
+    "development_overlaps": 0,
+    "accuracy_all": 0.1875,
+    "nonoverlap_trials": 48,
+    "accuracy_nonoverlap": 0.1875,
+    "median_inference_latency_ms": 86.18030000070576,
+    "confusion_true_rows_predicted_columns": [
+      [
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  }
+]

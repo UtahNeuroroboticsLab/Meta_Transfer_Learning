@@ -1,0 +1,7 @@
+pipeline,epochs_recorded,maximum_validation_accuracy,epoch_to_60,updates_to_60,utah_trials_seen_to_60,epoch_to_70,updates_to_70,utah_trials_seen_to_70,epoch_to_80,updates_to_80,utah_trials_seen_to_80,epoch_to_90,updates_to_90,utah_trials_seen_to_90,epoch_to_100,updates_to_100,utah_trials_seen_to_100,best_validation_by_epoch_5,best_validation_by_epoch_10,best_validation_by_epoch_15,best_validation_by_epoch_20,best_validation_by_epoch_30,best_validation_by_epoch_50,mean_validation_accuracy_first_50
+GAN adapter,200,1.0,17,85,1360,21,105,1680,21,105,1680,54,270,4320,54,270,4320,0.2,0.2,0.4,0.6,0.8,0.8,0.49000000000000005
+Original Meta-TL,200,1.0,11,55,880,18,90,1440,49,245,3920,51,255,4080,51,255,4080,0.2,0.4,0.6,0.7,0.7,0.8,0.504
+Rotational Meta-TL,200,1.0,29,145,2320,33,165,2640,35,175,2800,125,625,10000,128,640,10240,0.2,0.3,0.3,0.4,0.6,0.8,0.4380000000000001
+Utah-only student,40,1.0,4,20,320,10,50,800,12,60,960,14,70,1120,15,75,1200,0.6,0.7,1.0,1.0,1.0,1.0,0.7799999999999999
+Prototype student,120,0.9,7,35,560,8,40,640,17,85,1360,85,425,6800,,,,0.5,0.7,0.7,0.8,0.8,0.8,0.7019999999999998
+Prototype + relational,120,0.9,4,20,320,7,35,560,14,70,1120,18,90,1440,,,,0.6,0.7,0.8,0.9,0.9,0.9,0.7259999999999998

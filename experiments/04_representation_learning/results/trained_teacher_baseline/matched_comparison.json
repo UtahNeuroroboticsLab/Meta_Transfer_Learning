@@ -1,0 +1,26 @@
+[
+  {
+    "method": "utah_only",
+    "best_epoch": 15,
+    "same_day_test_accuracy": 0.5,
+    "same_day_balanced_accuracy": 0.5,
+    "different_day_accuracy_53": 0.20833333333333334,
+    "different_day_balanced_accuracy_53": 0.2
+  },
+  {
+    "method": "prototype_only",
+    "best_epoch": 118,
+    "same_day_test_accuracy": 0.5,
+    "same_day_balanced_accuracy": 0.5,
+    "different_day_accuracy_53": 0.2708333333333333,
+    "different_day_balanced_accuracy_53": 0.2688888888888889
+  },
+  {
+    "method": "prototype_relational",
+    "best_epoch": 117,
+    "same_day_test_accuracy": 0.5,
+    "same_day_balanced_accuracy": 0.5,
+    "different_day_accuracy_53": 0.3125,
+    "different_day_balanced_accuracy_53": 0.3066666666666667
+  }
+]

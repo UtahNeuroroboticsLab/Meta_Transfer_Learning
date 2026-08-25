@@ -1,0 +1,2 @@
+best_epoch,best_validation_accuracy,best_validation_task_bce,final_validation_accuracy,test_accuracy,test_task_bce
+147,1.0,0.2212182730436325,1.0,1.0,0.22862552106380463

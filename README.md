@@ -2,12 +2,16 @@
 
 ## Overview
 
-This project reuses Meta's pretrained discrete-gesture EMG decoder on University of Utah prosthetics data. A lightweight TCN adapter translates Utah recordings into the input expected by Meta's model while the pretrained Meta backbone remains frozen.
+This project studies gesture decoding from University of Utah prosthetics EMG
+recordings, using Meta's released neuromotor model and Utah-specific models as
+reference points. It covers the full path from aligned continuous recordings to
+offline, cross-session, and online-style evaluation.
 
-The repository supports two experiments:
-
-- `Zero_Shot_Meta.ipynb`: no-training baseline using a fixed Utah-to-Meta input conversion.
-- `Meta_TL.ipynb`: trains only the Utah adapter while preserving the pretrained Meta weights.
+The research extensions explore transfer learning, invariant representations,
+domain adaptation, knowledge distillation, joint embedding, and Utah-only
+baselines. Reproducible notebooks and compact results are grouped by purpose in
+the [`experiments` index](experiments/EXPERIMENT_INDEX.md). Raw recordings,
+generated datasets, and trained weights are kept outside version control.
 
 ## Data pipeline
 

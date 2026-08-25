@@ -1,0 +1,8 @@
+{
+  "loss": 1.1696625709533692,
+  "acc": 0.5,
+  "balanced_acc": 0.5,
+  "method": "matched Utah-only",
+  "best_epoch": 16,
+  "different_day_accuracy": 0.25
+}

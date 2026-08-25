@@ -1,0 +1,6 @@
+true\predicted,left,right,up,down,press
+left,2,0,0,0,0
+right,0,2,0,0,0
+up,0,0,2,0,0
+down,0,0,0,2,0
+press,0,0,0,0,2

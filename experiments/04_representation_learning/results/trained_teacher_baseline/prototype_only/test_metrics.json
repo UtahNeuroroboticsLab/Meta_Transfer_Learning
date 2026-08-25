@@ -1,0 +1,12 @@
+{
+  "loss": 1.3716623306274414,
+  "acc": 0.5,
+  "balanced_acc": 0.5,
+  "method": "prototype_only",
+  "best_epoch": 118,
+  "prototype_weight": 0.5,
+  "relational_weight": 0.0,
+  "different_day_accuracy": 0.2708333333333333,
+  "different_day_balanced_accuracy": 0.2688888888888889,
+  "different_day_loss": 2.598090171813965
+}

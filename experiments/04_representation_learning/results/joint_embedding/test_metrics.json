@@ -1,0 +1,9 @@
+{
+  "loss": 1.2527382850646973,
+  "acc": 0.8,
+  "balanced_acc": 0.8,
+  "method": "two-stem joint supervised contrastive embedding",
+  "best_epoch": 14,
+  "supcon_weight": 0.25,
+  "temperature": 0.12
+}

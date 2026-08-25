@@ -1,0 +1,130 @@
+[
+  {
+    "label": "p0.05_r0",
+    "prototype_weight": 0.05,
+    "relational_weight": 0.0,
+    "best_epoch": 22,
+    "best_val_balanced_accuracy": 0.8,
+    "best_val_loss": 0.8936186790466308
+  },
+  {
+    "label": "p0.05_r0.05",
+    "prototype_weight": 0.05,
+    "relational_weight": 0.05,
+    "best_epoch": 14,
+    "best_val_balanced_accuracy": 0.8,
+    "best_val_loss": 1.114787483215332
+  },
+  {
+    "label": "p0.05_r0.1",
+    "prototype_weight": 0.05,
+    "relational_weight": 0.1,
+    "best_epoch": 16,
+    "best_val_balanced_accuracy": 0.9,
+    "best_val_loss": 0.9280238151550293
+  },
+  {
+    "label": "p0.05_r0.15",
+    "prototype_weight": 0.05,
+    "relational_weight": 0.15,
+    "best_epoch": 29,
+    "best_val_balanced_accuracy": 1.0,
+    "best_val_loss": 0.6259707927703857
+  },
+  {
+    "label": "p0.1_r0",
+    "prototype_weight": 0.1,
+    "relational_weight": 0.0,
+    "best_epoch": 17,
+    "best_val_balanced_accuracy": 0.9,
+    "best_val_loss": 0.8078207015991211
+  },
+  {
+    "label": "p0.1_r0.05",
+    "prototype_weight": 0.1,
+    "relational_weight": 0.05,
+    "best_epoch": 25,
+    "best_val_balanced_accuracy": 0.8,
+    "best_val_loss": 0.7169780731201172
+  },
+  {
+    "label": "p0.1_r0.1",
+    "prototype_weight": 0.1,
+    "relational_weight": 0.1,
+    "best_epoch": 54,
+    "best_val_balanced_accuracy": 0.9,
+    "best_val_loss": 0.5489734172821045
+  },
+  {
+    "label": "p0.1_r0.15",
+    "prototype_weight": 0.1,
+    "relational_weight": 0.15,
+    "best_epoch": 54,
+    "best_val_balanced_accuracy": 1.0,
+    "best_val_loss": 0.3774271488189697
+  },
+  {
+    "label": "p0.25_r0",
+    "prototype_weight": 0.25,
+    "relational_weight": 0.0,
+    "best_epoch": 25,
+    "best_val_balanced_accuracy": 0.9,
+    "best_val_loss": 0.6836492538452148
+  },
+  {
+    "label": "p0.25_r0.05",
+    "prototype_weight": 0.25,
+    "relational_weight": 0.05,
+    "best_epoch": 62,
+    "best_val_balanced_accuracy": 0.8,
+    "best_val_loss": 0.6224271774291992
+  },
+  {
+    "label": "p0.25_r0.1",
+    "prototype_weight": 0.25,
+    "relational_weight": 0.1,
+    "best_epoch": 14,
+    "best_val_balanced_accuracy": 0.9,
+    "best_val_loss": 0.9473679542541504
+  },
+  {
+    "label": "p0.25_r0.15",
+    "prototype_weight": 0.25,
+    "relational_weight": 0.15,
+    "best_epoch": 104,
+    "best_val_balanced_accuracy": 0.9,
+    "best_val_loss": 0.5339200019836425
+  },
+  {
+    "label": "p0.5_r0",
+    "prototype_weight": 0.5,
+    "relational_weight": 0.0,
+    "best_epoch": 21,
+    "best_val_balanced_accuracy": 1.0,
+    "best_val_loss": 0.927645206451416
+  },
+  {
+    "label": "p0.5_r0.05",
+    "prototype_weight": 0.5,
+    "relational_weight": 0.05,
+    "best_epoch": 30,
+    "best_val_balanced_accuracy": 0.9,
+    "best_val_loss": 0.6511086463928223
+  },
+  {
+    "label": "p0.5_r0.1",
+    "prototype_weight": 0.5,
+    "relational_weight": 0.1,
+    "best_epoch": 84,
+    "best_val_balanced_accuracy": 0.8,
+    "best_val_loss": 0.580355453491211
+  },
+  {
+    "label": "p0.5_r0.15",
+    "prototype_weight": 0.5,
+    "relational_weight": 0.15,
+    "best_epoch": 115,
+    "best_val_balanced_accuracy": 0.8,
+    "best_val_loss": 0.6127139091491699
+  }
+]

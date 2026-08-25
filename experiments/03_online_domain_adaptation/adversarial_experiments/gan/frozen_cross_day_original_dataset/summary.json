@@ -1,0 +1,122 @@
+{
+  "protocol": "Frozen offline cross-day classification. Ground-truth labels are used only for active-centered window extraction, active-bin selection, and scoring.",
+  "training_dataset": "C:\\Users\\Micah\\utah-neuro\\generic_neuromotor_interface\\New_Gesture_Trial_Dataset_Labeled (2).pt",
+  "evaluation_dataset": "C:\\Users\\Micah\\utah-neuro\\generic_neuromotor_interface\\Gesture_Trial_Dataset_Labeled.pt",
+  "checkpoint": "C:\\Users\\Micah\\utah-neuro\\MATLAB_Jupyter\\online_evaluation\\adversarial_experiments\\gan\\best_meta_source_gan_adapter.pt",
+  "checkpoint_best_epoch": 191,
+  "checkpoint_best_validation_accuracy": 1.0,
+  "adaptation_method": "gan",
+  "model_sha256_before": "d765717a2a87b0cc11574fd7f92ad8ea8d87fd7c75b855b44dbb236761afcad7",
+  "model_sha256_after": "d765717a2a87b0cc11574fd7f92ad8ea8d87fd7c75b855b44dbb236761afcad7",
+  "weights_unchanged": true,
+  "dataset_trials": 53,
+  "scored_trials": 48,
+  "unusable_trials": 5,
+  "correct_trials": 5,
+  "complete_trial_accuracy": 0.10416666666666667,
+  "chance_accuracy": 0.2,
+  "above_chance_binomial_p_one_sided": 0.9751608027894177,
+  "accuracy_95_percent_exact_ci": [
+    0.03469812212107246,
+    0.22657766128376408
+  ],
+  "active_bin_accuracy": 0.10445632798573976,
+  "active_bins": 2805,
+  "mean_active_bin_bce": 0.5662499666213989,
+  "confusion_true_rows_predicted_columns": [
+    [
+      5,
+      0,
+      4,
+      0,
+      0
+    ],
+    [
+      10,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      9,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      10,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      9,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "per_class": {
+    "thumb left": {
+      "trials": 9,
+      "correct": 5,
+      "recall": 0.5555555555555556
+    },
+    "thumb right": {
+      "trials": 10,
+      "correct": 0,
+      "recall": 0.0
+    },
+    "thumb up": {
+      "trials": 10,
+      "correct": 0,
+      "recall": 0.0
+    },
+    "thumb down": {
+      "trials": 10,
+      "correct": 0,
+      "recall": 0.0
+    },
+    "thumb press": {
+      "trials": 9,
+      "correct": 0,
+      "recall": 0.0
+    }
+  },
+  "unusable_details": [
+    {
+      "index": 0,
+      "gesture": 0,
+      "trial_num": 1,
+      "reason": "no active-valid labeled samples"
+    },
+    {
+      "index": 5,
+      "gesture": 0,
+      "trial_num": 6,
+      "reason": "no active-valid labeled samples"
+    },
+    {
+      "index": 9,
+      "gesture": 0,
+      "trial_num": 10,
+      "reason": "no active-valid labeled samples"
+    },
+    {
+      "index": 39,
+      "gesture": 3,
+      "trial_num": 8,
+      "reason": "no active-valid labeled samples"
+    },
+    {
+      "index": 49,
+      "gesture": 4,
+      "trial_num": 7,
+      "reason": "no active-valid labeled samples"
+    }
+  ]
+}

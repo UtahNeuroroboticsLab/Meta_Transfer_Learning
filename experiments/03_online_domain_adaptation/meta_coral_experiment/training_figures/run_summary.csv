@@ -1,0 +1,2 @@
+coral_enabled,best_epoch,best_validation_accuracy,best_validation_task_bce,final_validation_accuracy,test_accuracy,test_task_bce
+True,182,1.0,0.34665361046791077,1.0,0.9,0.3695100247859955

@@ -1,0 +1,92 @@
+{
+  "protocol": "EMG-only detection, window centering, active-bin selection, and frozen classification; labels used afterward for scoring only",
+  "dataset": "C:\\Users\\Micah\\utah-neuro\\generic_neuromotor_interface\\Gesture_Trial_Dataset_Labeled.pt",
+  "checkpoint": "C:\\Users\\Micah\\utah-neuro\\MATLAB_Jupyter\\online_evaluation\\adversarial_experiments\\gan\\best_meta_source_gan_adapter.pt",
+  "checkpoint_epoch": 191,
+  "model_sha256": "d765717a2a87b0cc11574fd7f92ad8ea8d87fd7c75b855b44dbb236761afcad7",
+  "duration_seconds": 139.98213333333334,
+  "predicted_events": 56,
+  "truth_events": 48,
+  "matched_events": 47,
+  "missed_events": 1,
+  "false_detections": 9,
+  "detection_precision": 0.8392857142857143,
+  "detection_recall": 0.9791666666666666,
+  "conditional_gesture_accuracy": 0.1276595744680851,
+  "end_to_end_correct_recall": 0.125,
+  "end_to_end_correct_precision": 0.10714285714285714,
+  "median_inference_latency_ms": 128.50684998556972,
+  "median_decision_latency_from_true_end_ms": 352.43333333333334,
+  "events_truncated_by_one_second_window": 4,
+  "confusion_true_rows_predicted_columns": [
+    [
+      5,
+      0,
+      4,
+      0,
+      0
+    ],
+    [
+      10,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      10,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "split_metrics": {
+    "train": {
+      "truth_events": 38,
+      "detected_events": 37,
+      "detection_recall": 0.9736842105263158,
+      "conditional_gesture_accuracy": 0.13513513513513514,
+      "end_to_end_correct_recall": 0.13157894736842105
+    },
+    "val": {
+      "truth_events": 5,
+      "detected_events": 5,
+      "detection_recall": 1.0,
+      "conditional_gesture_accuracy": 0.0,
+      "end_to_end_correct_recall": 0.0
+    },
+    "test": {
+      "truth_events": 5,
+      "detected_events": 5,
+      "detection_recall": 1.0,
+      "conditional_gesture_accuracy": 0.2,
+      "end_to_end_correct_recall": 0.2
+    }
+  },
+  "detector": {
+    "high_threshold": 0.15216853004470468,
+    "low_threshold": 0.14413767447955905,
+    "merge_gap_ms": 300,
+    "artifact_masking": false
+  },
+  "important_limitations": [
+    "Detector parameters were selected after inspecting this prior session, so this is a pipeline benchmark rather than a final untouched detector test.",
+    "One-second buffered zero-phase high-pass preprocessing is label-blind but not sample-by-sample causal.",
+    "The gesture model has no rest class, so every false detection receives a gesture label."
+  ]
+}

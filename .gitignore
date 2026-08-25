@@ -1,0 +1,19 @@
+# Notebook and Python runtime files
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# Local EMG datasets and trained weights
+*.pt
+*.ckpt
+*.h5
+*.hdf5
+*.ns2
+*.ns5
+*.kdf
+emg_data/
+emg_models/
+
+# Generated training state
+lightning_logs/
+logs/

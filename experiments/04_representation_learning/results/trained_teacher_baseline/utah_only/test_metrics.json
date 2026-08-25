@@ -1,0 +1,12 @@
+{
+  "loss": 1.2255234718322754,
+  "acc": 0.5,
+  "balanced_acc": 0.5,
+  "method": "utah_only",
+  "best_epoch": 15,
+  "prototype_weight": 0.0,
+  "relational_weight": 0.0,
+  "different_day_accuracy": 0.20833333333333334,
+  "different_day_balanced_accuracy": 0.2,
+  "different_day_loss": 1.7230281432469685
+}
