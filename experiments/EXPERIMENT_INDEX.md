@@ -10,7 +10,6 @@ stable.
 - MATLAB alignment/export helpers
 - `session_20260723/`: original NSx/KDF session files
 - `aligned_h5/`: aligned intermediate datasets
-- `legacy_exports/`: older large HDF5/MAT exports retained for provenance
 
 Notebooks:
 
@@ -20,13 +19,12 @@ Notebooks:
 
 ## 01_meta_tl_baseline
 
-- Original and current Meta-TL notebooks
+- Current Meta-TL pipeline and baseline controls
 - Meta-TL versus standalone decoder comparison
 - Baseline checkpoints, histories, confusion matrices, and figures
 
 Notebooks:
 
-- `01_legacy_meta_tl.ipynb`
 - `02_current_meta_tl.ipynb` (primary baseline)
 - `03_compare_meta_tl_vs_standalone.ipynb`
 - `04_standalone_decoder_append_cells.ipynb`
@@ -83,10 +81,3 @@ Notebooks:
 - `generic_neuromotor_interface/Gesture_Trial_Dataset_Labeled.pt`:
   separate-day evaluation dataset
 - `generic_neuromotor_interface/emg_data/`: Meta source dataset
-
-## Temporary legacy folders
-
-If `online_evaluation/` or `representation_learning_experiments/` still appears
-at the MATLAB/Jupyter root, it is empty and is being held open by an active
-Jupyter/Python process. It can be removed after those kernels close; all files
-have already moved into sections 03 and 04.
