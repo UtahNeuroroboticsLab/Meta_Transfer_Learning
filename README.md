@@ -13,10 +13,8 @@ baselines. Reproducible notebooks and compact results are grouped by purpose in
 the [`experiments` index](experiments/EXPERIMENT_INDEX.md). Raw recordings,
 generated datasets, and trained weights are kept outside version control.
 
-The current data workflow is in `data_preparation/current_pipeline/`; the
-original repository implementation is preserved in
-`data_preparation/original_pipeline/`. Model experiments and their compact
-results are organized under `experiments/`.
+The current data workflow is in `data_preparation/current_pipeline/`. Model
+experiments and their compact results are organized under `experiments/`.
 
 ## Data pipeline
 
